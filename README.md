@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# 📊 Dashboard Administrativo – Lógika
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto se creo para la prueba tecnica de  **Lógika**, una aplicación web desarrollada para la gestión de categorías, contenidos y módulos administrativos, con un login
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## React Compiler
+- ⚛️ React (con Vite)
+- 🟦 TypeScript
+- 🎨 Tailwind CSS
+- 🧠 Redux Toolkit
+- 🌐 React Router DOM
+- 🔐 Autenticación basada en token
+- 📡 Consumo de APIs REST
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## 🧭 Layout del Dashboard
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+El dashboard está compuesto por:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Navbar superior**
+  - Logo de Lógika
+  - Avatar del usuario
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Sidebar izquierdo**
+  - Navegación con íconos
+  - Botón de cerrar sesión fijo al fondo
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Área de contenido**
+  - Renderizado dinámico mediante rutas
+
+---
+
+## 🛣️ Rutas principales
+
+```tsx
+/login                → Autenticación
+/dashboard            → Home del dashboard
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Estado global
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Se utiliza Redux Toolkit para manejar:
+- Autenticación
+- Datos del dashboard
+- Estados de carga y error
+
+---
+
+## 🧪 Scripts
+
+```bash
+git clone https://github.com/Julian0399/pruebatecnicalogika.git
+npm install
+npm run dev
 ```
+
+## 🏢 Empresa
+
+**Lógika**  
+

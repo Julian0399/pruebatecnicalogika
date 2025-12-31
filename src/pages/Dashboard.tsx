@@ -1,4 +1,4 @@
-import CategoriesTabs from "../components/categories/categoriesTabs";
+import CategoriesTabs from "../components/categories/CategoriesTabs";
 import CategoriesActions from "../components/categories/CategoriesActions";
 import CategoriesTable from "../components/categories/CategoriesTable";
 
