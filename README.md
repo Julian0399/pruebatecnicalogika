@@ -3,7 +3,10 @@
 Este proyecto se creo para la prueba tecnica de  **Lógika**, una aplicación web desarrollada para la gestión de categorías, contenidos y módulos administrativos, con un login
 
 ---
+## Proyecto en vercel
+[Link De Vercel](https://pruebatecnicalogika-f6gm.vercel.app/Login)
 
+---
 ## 🚀 Tecnologías utilizadas
 
 - ⚛️ React (con Vite)
