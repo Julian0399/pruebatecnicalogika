@@ -3,8 +3,8 @@ import { useAppDispatch, useAppSelector } from "../hooks/storeHooks";
 import { loginUser } from "../store/slices/authReducer";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Background from "../assets/Background.png";
-import Logo from "../assets/Logo.png";
+import background from "../assets/background.png";
+import logo from "../assets/logo.png";
 import iconEmail from "../assets/iconEmail.png";
 import iconPassword from "../assets/iconPassword.png";
 
@@ -57,9 +57,9 @@ function Login() {
     }
   };
   return (
-      <div className="min-h-screen bg-repeat flex items-center justify-center" style={{ backgroundImage: `url(${Background})` }}>
+      <div className="min-h-screen bg-repeat flex items-center justify-center" style={{ backgroundImage: `url(${background})` }}>
         <div className="flex flex-col items-center justify-between bg-white bg-opacity-75 rounded-[20px] shadow-[0px_4px_8px_3px_rgba(0,0,0,0.15)] w-142.25 mx-auto h-148.5 p-8">
-        <img src={Logo} alt="Logo Be Kind" />
+        <img src={logo} alt="Logo Be Kind" />
         <h1 className="text-3xl text-center ">
           ¡Empieza a conectar tu comunidad ante buenas acciones!
         </h1>
